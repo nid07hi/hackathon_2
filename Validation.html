@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JAVASCRIPT FORM VALIDATION - checking non empty</title>
+<link rel='stylesheet' href='form-style.css' type='text/css' />
+<script src="./Validation.js"></script>
+</head>
+<body onload='document.form1.text1.focus()'>
+<div class="mail">
+<p>Enter User Id [Between 6 to 8 Characters]</p>
+<form name="form1" action="#">
+<ul>
+<li>Username:<input type='text' name='text1'/></li>
+<br>
+<br>
+<li> Enter PIN [only alphanumeric] <input type="text" name="text1" placeholder="Enter Pin"> </li>
+<br>
+<br>
+
+<li><select name="states" id="states">
+    <option value="mh" selected>Haryana</option>
+<option value="kn">HIMACHAL PRADESH</option>
+<option value="up">Rajhastan</option>
+<option value="gj">Punjab</option>
+</select></li>
+ <br>
+ <br>
+ <li>
+    <p>Choose One:</p>
+<input type="radio" id="html" name="fav_product" value="HTML">
+<label for="html">Milk</label><br>
+<input type="radio" id="css" name="fav_product" value="CSS">
+<label for="css">Butter</label><br>
+<input type="radio" id="javascript" name="fav_product" value="JavaScript">
+<label for="javascript">Cheese</label>
+ </li>
+ <br>
+ <br>
+ <li class="submit"it"><input type="submit" name="submit" value="Submit" onclick="stringlength(document.form1.text1,6,8,name)"/></li>
+</form>
+</ul>
+</div>
+<script src="Fake.js"></script>
+</body>
+</html>
